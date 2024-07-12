@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination.ng</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- link to script.js bundle file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- font import -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;700&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/76b6fa4300.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style-large.css">
+
+    <!-- script -->
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container-fluid m-0 p-0">
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-xl navbar-dark px-5 py-3">
+                <div class="navbar-flex row">
+                    <!-- col1 -->
+                    <div class="col-lg-4 col-md-10 col-sm-10">
+                        <!-- logo brand -->
+                        <div style="width: 150px;">
+                            <a class="navbar-brand" href="#"> Vaccination.ng </a>
+                            <div style="background-color: rgba(23, 194, 236, 1); height: 3px; width: 50%; "> </div>
+                        </div>
+                        <!-- logo brand -->
+                    </div>
+                    <!-- col2 -->
+                    <div class="col-lg-1 col-md-1">
+                        <!-- collapse button -->
+                        <button class="navbar-toggler my-2 " type="button" data-toggle="collapse" data-target="#colNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <!-- col3 -->
+                    <div class="col-lg-7 col-md-12 d-flex">
+                        <!-- collapse list -->
+                        <div class="collapse navbar-collapse" id="colNav">
+                            <ul class="navbar-nav col-lg-12">
+                                <div class="row nav-item d-flex flex-wrap">
+                                    <div class="col-lg-9" id="navBarMenu">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white " href="#"> Home </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Schedule </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Contact us </a>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class=" col-lg-3 p-0">
+                                    <a class=" nav-item d-flex justify-content-center align-items-center check-status"
+                                        href="#">
+                                        Check Status</a>
+                                </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+            <!-- NAVBAR -->
+            <!-- HERO -->
+            <div class="hero row  d-flex flex-wrap">
+                <!-- left hero -->
+                <div class=" left col-lg-6 col-md-12 col-sm-12 py-5">
+                    <div class="one">Get Vaccinated. Boost your Immune System</div>
+                    <div class="two">COVID-19 Vaccination
+                        Got Easier With,
+                        <span style="    color: rgba(23, 194, 236, 1);
+                        ">Vaccination.ng</span>
+                    </div>
+                    <div class="three">Vaccination.ng will help you find the nearest
+                        centre for vaccination, in all 36 states in Nigeria.</div>
+                    <div class="d-flex justify-content-left four">
+
+                        <a href="#reg-today">
+                            <div class="btn get-vaccine d-flex justify-content-center align-items-center ">Get
+                                Vaccine
+                            </div>
+                        </a>
+
+                        <a href="#get-quote">
+                            <div class="btn help-centre d-flex justify-content-center align-items-center ">
+                                Help Centre</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- left hero -->
+
+                <!-- right hero -->
+                <div class="right col-lg-5 col-md-12">
+                    <div id="decor1">
+                        <img class="my-3 img-fluid" src="./images/hero-vaccine-huge.png" alt="">
+                        <div id="decor2"> <img src="./images/decor2.png" alt=""> </div>
+                        <div id="decor3"> <img src="./images/decor3.png" alt=""> </div>
+                        <div id="decor4">
+                            <img class="img-fluid" src="./images/decor4.png" alt="">
+                            <div class="description">
+                                <div>20+</div>
+                                <div style="color: rgba(23, 194, 236, 1) ;">Specialists</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- right hero -->
+                <!-- row - schedule your vaccination -->
+                <div class="row schedule-vaccination d-flex justify-content-center align-items-center p-0 m-0">
+                    <div class=" col-lg-12 m-0 px-5  ">
+                        <div class="row schedule-title mx-5">
+                            <span class="icon-box"> <i class="far fa-clock"></i>
+                            </span>
+                            <span class=" pl-4 d-flex align-items-center">Schedule your Vaccination</span>
+                        </div>
+                        <div class="row location p-0 mx-5 pt-3">
+                            <div class=" location-box col-lg-12 ">
+                                <div class="col-lg-3 col-md-6 col-sm-12 d-flex my-4">
+                                    <div class="mr-3 mt-2">
+                                        <span class="icon-box"><i class="fas fa-search-location"></i></span>
+                                    </div>
+                                    <div class="">
+                                        <div class="row m-0" style="color:rgba(255, 255, 255, 0.7); ">Location</div>
+                                        <div class="row m-0">Ikeja Lagos, Nigeria</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 d-flex my-4">
+                                    <div class="mr-3 mt-2">
+                                        <span class="icon-box"><i class="fas fa-search-location"></i></span>
+                                    </div>
+                                    <div class="">
+                                        <div class="row m-0" style="color:rgba(255, 255, 255, 0.7); ">Date</div>
+                                        <div class="row m-0">29 February, 2022</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 d-flex my-4 mx-0">
+                                    <div class="mr-3 mt-2">
+                                        <span class="icon-box"><i class="fas fa-search-location"></i></span>
+                                    </div>
+                                    <div class="">
+                                        <div class="row m-0" style="color:rgba(255, 255, 255, 0.7); ">Vaccine Type</div>
+                                        <div class="row m-0">Moderna</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 d-flex my-4">
+                                    <div class="btn mr-3 mt-2 m-0">
+                                        Submit
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row - schedule your vaccination -->
+            </div>
+            <!--HERO  -->
+        </div>
+    </header>
+    <!-- HEADER -->
+    <!-- MAIN -->
+    <!-- BRAND BANNER -->
+    <div class="row brand-logos m-0 p-3">
+        <img src="./images/Moderna_logo 1.png" class="img-fluid" alt="">
+        <img src="./images/Pfizer_(2021) 1.png" class="img-fluid" alt="">
+
+        <img src="./images/yellow-logo-zeneca-pharmaceutical-industry-brand 1.png" class="img-fluid" alt="">
+
+        <img src="./images/sinovac1336 1.png" class="img-fluid" alt="">
+    </div>
+    <!-- BRAND BANNER -->
+    <!-- CHECK -->
+    <main id="check-result" class="d-flex justify-content-center">
+        <div class="check-result">
+            <div class="checkres-title">
+                Check your COVID-19 result on our Database
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="checkres-inp  m-0">
+
+                    <div class="col-lg col-md-12 p-0"><input type="text" placeholder="Name" name="" id=""></div>
+                    <div class="col-lg col-md-12 p-0"><input type="text" placeholder="NIK Number" name="" id=""></div>
+                    <div class=" col-lg col-md-5 p-0 check-btn-box">
+                        <div class="btn">Check</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="checkres-certi">Need a certificate for your COVID-19 result? Please click <a
+                        style="text-decoration: underline !important; color: rgba(23, 194, 236, 1);" href="#" >here</a> </div>
+            </div>
+        </div>
+    </main>
+    <!-- CHECK -->
+    <!-- WHY GET VACCINE. -->
+    <main id="why-vaccine" class="row m-0 px-5 py-3 d-flex justify-content-center">
+        <div class="why-vacc row">
+            <div class="why-vacc-title col-lg-5">Why get vaccinated
+                today?</div>
+            <div class="why-vacc-des d-flex justify-content-right col-lg-5">
+                Magna adipiscing at elit at ornare lectus nibh lorem.
+                Ac, sed ac lorem pellentesque vestibulum risus matti.
+                In molestie condimentum malesuada non.</div>
+        </div>
+        <div class="why-ans row">
+            <div id="why-one" class="pb-4 col-lg-4 col-md-12 ">
+                <div>
+                    <span class="icon-box">
+                        <i class="fas fa-shield-alt"></i>
+                    </span>
+                </div>
+                <div class="title">Protects your immune
+                    system against viruses</div>
+                <div class="des">Velit ut consectetur mauris, orci amet,
+                    faucibus.
+                    Sit turpis fringilla ipsum pretium,
+                    dictum. Dolor eget vel nulla lorem ac.</div>
+                <div class="read-more">Read More &nbsp;<i class="fas fa-long-arrow-alt-right"></i></div>
+            </div>
+
+            <div id="why-two" class="pb-4 col-lg-3 col-md-6 col-sm-6 ">
+                <div>
+                    <span class="icon-box">
+                        <i class="fas fa-users"></i>
+                    </span>
+                </div>
+                <div class="title">Minimize the spread
+                    of the Virus</div>
+                <div class="read-more">Read More &nbsp;<i class="fas fa-long-arrow-alt-right"></i></div>
+            </div>
+
+            <div id="why-three" class="pb-4 col-lg-3 col-md-6 col-sm-6 ">
+                <div>
+                    <span class="icon-box">
+                        <i class="fas fa-thermometer-full"></i> </span>
+                </div>
+                <div class="title">Protect yourself</div>
+                <div class="read-more">Read More &nbsp;<i class="fas fa-long-arrow-alt-right"></i></div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </main>
+    <!-- WHY GET VACCINE. -->
+
+    <!-- REGISTER TODAY -->
+    <div id="reg-today" class="row m-0 px-5 py-3 d-flex justify-content-center ">
+        <div class="row reg-today m-0 container">
+            <div class="col-lg-10 d-flex justify-content-center">
+                <div class="title">Get your vaccine
+                    registration today</div>
+            </div>
+
+            <div class="row reg-body mb-5 m-0">
+                <div class="photo col-lg-4">
+                    <img class="img-fluid" src="./images/reg-today-img.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="reg-inp-box">
+                        <div>
+                            <label class="" for="">Patient’s Full Name</label>
+                            <input class="row m-0" type="text" name="" placeholder="Full name" id="reg-today-fullName">
+                        </div>
+
+                        <div>
+                            <label class=" " for="">Mobile Number</label>
+                            <p class="">Notifications for appointment and reminders will be sent to this
+                                provided number</p>
+                            <div class="input-row row ">
+                                <input class="col-lg-8 " type="text" name="" placeholder="Phone number" id="reg-today-phone">
+                                <button class="col-md-3" id="reg-today-verifyBtn">Verify</button>
+                            </div>
+                        </div>
+                        <button class=" text-center" id="reg-today-submitBtn">Submit</button>
+                        <div class="more text-center">Already registered ? <span>Check your status</span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- REGISTER TODAY -->
+
+    <!-- SYMPTOMs -->
+    <div id="symptoms" class="d-flex justify-content-center align-items-center">
+        <div class="symptoms container mt-5">
+            <div class="header d-flex flex-column justify-content-center align-items-center" id="symptoms">
+                <div class="preheader">Covid-19 Prevention</div>
+                <div class="title">COVID-19 <span>Symptoms</span></div>
+                <div class="des">Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis aenean eu velit.
+                    Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec neque.</div>
+            </div>
+            <div class="body">
+                <div class="img-box" style="position: relative;">
+                    <img src="./images/symptom-human.png" class="img-fluid" alt="">
+                    <div class="symp-item" id="symp-1">
+                        <img id="symp-item" class="img-fluid" src="./images/corona.png" alt="">
+                        <div class="content">High Fever</div>
+                    </div>
+                    <div class="symp-item" id="symp-2">
+                        <img id="symp-item" src="./images/corona.png" alt="">
+                        <div class="content">Loss of sense of taste</div>
+                    </div>
+                    <div class="symp-item" id="symp-3">
+                        <img id="symp-item" src="./images/corona.png" alt="">
+                        <div class="content">Loss sense of smell</div>
+                    </div>
+                    <div class="symp-item" id="symp-4">
+                        <img id="symp-item" src="./images/corona.png" alt="">
+                        <div class="content">Difficulty Breathing</div>
+                    </div>
+                    <div class="symp-item" id="symp-5">
+                        <img id="symp-item" src="./images/corona.png" alt="">
+                        <div class="content">Dry cough</div>
+                    </div>
+
+                    <div class="symp-item" id="symp-6">
+                        <img id="symp-item" src="./images/corona.png" alt="">
+                        <div class="content">Sore Throat</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SYMPTOMs -->
+
+    <!-- FEEDBACK -->
+    <div id="feedback" class="d-flex justify-content-center align-items-center">
+        <div class="feedback mt-5">
+            <div class="header d-flex flex-column justify-content-center align-items-center" id="">
+                <div class="preheader">FEEDBACK</div>
+                <div class="title">What our Patients Think</span></div>
+                <div class="des">Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis aenean eu velit.
+                    Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec neque.</div>
+            </div>
+            <div class="body">
+                <div class="row mx-5 cards  ">
+                    <!-- start card -->
+                    <div class="feedback-item fb-card col-lg-3 col-md-12 d-flex justify-content-center" id="fb-1">
+                        <img id="feed-item" class="img-fluid" src="./images/vaccinebottle.png" alt="">
+                        <div class="card-body">
+                            <div class="row mx-0 fb-header">
+                                <img src="./images/author1.png" class="author img-fluid">
+                                <div class="">
+                                    <div class="name">Oyindamola Maja</div>
+                                    <div class="hometown">Badagry, Lagos</div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 text-center comment">
+                                “Been stressing about a close centre to get the covid-19 vaccine, until i tried
+                                Vaccination.ng”
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+
+                    <!-- start card -->
+                    <div class="feedback-item fb-card col-lg-3 col-md-12 d-flex justify-content-center" id="fb-1">
+                        <img id="feed-item" class="img-fluid" src="./images/vaccinebottle.png" alt="">
+                        <div class="card-body" style="background-color: rgba(23, 193, 236, 0.529);">
+                            <div class="row mx-0 fb-header">
+                                <img src="./images/author2.png" class="author img-fluid">
+                                <div class="">
+                                    <div class="name">Oyindamola Maja</div>
+                                    <div class="hometown">Badagry, Lagos</div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 text-center comment">“Got my vaccine very close to my house.
+                                Was very easy scheduling
+                                an appointment.”</div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+
+                    <!-- start card -->
+                    <div class="feedback-item fb-card col-lg-3 col-md-12 d-flex justify-content-center" id="fb-1">
+                        <img id="feed-item" class="img-fluid" src="./images/vaccinebottle.png" alt="">
+                        <div class="card-body">
+                            <div class="row mx-0 fb-header">
+                                <img src="./images/author3.png" class="author img-fluid">
+                                <div class="">
+                                    <div class="name">Oyindamola Maja</div>
+                                    <div class="hometown">Badagry, Lagos</div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 text-center comment">“Been stressing about a close centre
+                                to get the covid-19 vaccine, until
+                                i tried Vaccination.ng”</div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+
+
+
+
+                </div>
+            </div>
+
+
+            <!-- GET A QUOTE -->
+
+            <div class="get-quote mt-5 container d-flex justify-content-center">
+                <div class="header d-flex flex-column justify-content-center align-items-center" id="get-quote">
+                    <div class="title">Get a quote</div>
+                    <div class="des">Please do enter your email address below</div>
+                    <div class="d-flex input-box w-100 justify-content-center">
+                        <input id="get-quote-email" type="text" placeholder="lenux.ng@gmail.com">
+                        <button id="get-quote-confirmBtn" class="btn btn-primary"><i class="far fa-paper-plane"></i></button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- FEEDBACK -->
+
+    <footer>
+        <div style="width: 150px; margin-top: 150px; margin-left: 30px; margin-bottom: 30px;" class="">
+            <a class="footer-brand" href="#"> Vaccination.ng </a>
+            <div style="background-color: rgba(23, 194, 236, 1); height: 3px; width: 50%; "> </div>
+        </div>
+
+    </footer>
+
+</body>
+<script type="module" src="../script.js"></script>
+
+</html>
